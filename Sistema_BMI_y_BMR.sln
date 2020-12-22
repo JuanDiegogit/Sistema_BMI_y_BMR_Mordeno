@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{1D52B333-3A04-445C-9DBB-CCB6C3259F88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "Controlador\Controlador.csproj", "{70AC22A1-9781-4B1C-87C6-E3326C8027C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1D52B333-3A04-445C-9DBB-CCB6C3259F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D52B333-3A04-445C-9DBB-CCB6C3259F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D52B333-3A04-445C-9DBB-CCB6C3259F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70AC22A1-9781-4B1C-87C6-E3326C8027C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70AC22A1-9781-4B1C-87C6-E3326C8027C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70AC22A1-9781-4B1C-87C6-E3326C8027C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70AC22A1-9781-4B1C-87C6-E3326C8027C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
