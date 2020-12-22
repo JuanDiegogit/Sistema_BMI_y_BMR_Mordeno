@@ -63,9 +63,9 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cerrar__1_ {
+        internal static System.Drawing.Bitmap cerrar {
             get {
-                object obj = ResourceManager.GetObject("cerrar (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("cerrar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Vista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Minimize_Icon {
+        internal static System.Drawing.Bitmap Minimizar {
             get {
-                object obj = ResourceManager.GetObject("Minimize_Icon", resourceCulture);
+                object obj = ResourceManager.GetObject("Minimizar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

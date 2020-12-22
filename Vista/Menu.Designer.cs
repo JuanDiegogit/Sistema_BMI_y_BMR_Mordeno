@@ -42,7 +42,7 @@
             // 
             // btnMinimizar
             // 
-            this.btnMinimizar.Image = global::Vista.Properties.Resources.Minimize_Icon;
+            this.btnMinimizar.Image = global::Vista.Properties.Resources.Minimizar;
             this.btnMinimizar.Location = new System.Drawing.Point(384, 5);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
@@ -53,7 +53,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Image = global::Vista.Properties.Resources.cerrar__1_;
+            this.btnCerrar.Image = global::Vista.Properties.Resources.cerrar;
             this.btnCerrar.Location = new System.Drawing.Point(410, 5);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
