@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.1321
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{1EB0C79D-00BE-423A-ACEC-CCF02BB24936}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "Controlador\Controlador.csproj", "{C454CF8E-CDCD-48A4-8140-350305D8F14B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{79F82B96-9FB8-4D1E-9C15-1CA23DE17209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1EB0C79D-00BE-423A-ACEC-CCF02BB24936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB0C79D-00BE-423A-ACEC-CCF02BB24936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB0C79D-00BE-423A-ACEC-CCF02BB24936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C454CF8E-CDCD-48A4-8140-350305D8F14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C454CF8E-CDCD-48A4-8140-350305D8F14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C454CF8E-CDCD-48A4-8140-350305D8F14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C454CF8E-CDCD-48A4-8140-350305D8F14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F82B96-9FB8-4D1E-9C15-1CA23DE17209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F82B96-9FB8-4D1E-9C15-1CA23DE17209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F82B96-9FB8-4D1E-9C15-1CA23DE17209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F82B96-9FB8-4D1E-9C15-1CA23DE17209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -40,6 +41,112 @@ namespace Vista
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void txtNombre_Enter(object sender, EventArgs e)
+        {
+           txtNombre.Text = "";
+           txtNombre.ForeColor = Color.White;
+           lblNombre.Visible = true;
+           lblNombre.Location= new Point(lblNombre.Location.X,0);
+            
+             
+        }
+
+        private void txtNombre_Leave(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == String.Empty)
+            {
+              
+                for (int i = 0; i < 30; i++)
+                {
+                    lblNombre.Location = new Point(lblNombre.Location.X, lblNombre.Location.Y + 1);
+                    Thread.Sleep(5);
+
+                }
+                txtNombre.ForeColor = Color.Gray;
+                txtNombre.Text = "Nombre Del Usuario";
+                lblNombre.Visible = false;
+            }
+        }
+
+        private void btnMaximizarRestaurar_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+         
+        }
+
+        private void panelPrincipalContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lineShape2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lineShape1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        private void txtApellido_Enter(object sender, EventArgs e)
+        {
+            txtApellido.Text = "";
+            txtApellido.ForeColor = Color.White;
+            lblApellido.Visible = true;
+            lblApellido.Location = new Point(lblApellido.Location.X, 86);
+        }
+
+        private void lblApellido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtApellido_Leave(object sender, EventArgs e)
+        {
+            if (txtApellido.Text == String.Empty)
+            {
+
+                for (int i = 0; i < 30; i++)
+                {
+                    lblApellido.Location = new Point(lblApellido.Location.X, lblApellido.Location.Y + 1);
+                    Thread.Sleep(5);
+
+                }
+                txtApellido.ForeColor = Color.Gray;
+                txtApellido.Text = "Apellido Del Usuario";
+                lblApellido.Visible = false;
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
