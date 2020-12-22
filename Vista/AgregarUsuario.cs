@@ -148,5 +148,18 @@ namespace Vista
         {
 
         }
+
+        private void AgregarUsuario_Resize(object sender, EventArgs e)
+        {
+            if(panelPrincipalContenedor.MaximumSize.Width == panelPrincipalContenedor.Width)
+            {
+                panelPrincipal.Padding = new Padding((int)((this.Width-panelPrincipalContenedor.Width)/2), 10, 20, 10);
+            }
+            else
+            {
+                panelPrincipal.Padding = new Padding(20, 10, 20, 10);
+            }
+           
+        }
     }
 }

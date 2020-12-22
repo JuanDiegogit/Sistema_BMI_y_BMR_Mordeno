@@ -30,47 +30,47 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarUsuario));
             this.panelSuperior = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.panelPrincipalContenedor = new System.Windows.Forms.Panel();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lblApellido = new System.Windows.Forms.Label();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.lineApellido = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.lineNombre = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMaximizarRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.panelPrincipalContenedor = new System.Windows.Forms.Panel();
+            this.lblNivelActividadDescripcion = new System.Windows.Forms.Label();
+            this.txtaNivelActividad = new System.Windows.Forms.TextBox();
+            this.lblEstadoPeso = new System.Windows.Forms.Label();
+            this.nupBMR = new System.Windows.Forms.NumericUpDown();
+            this.lblBMR = new System.Windows.Forms.Label();
+            this.nupBMI = new System.Windows.Forms.NumericUpDown();
+            this.lblBMI = new System.Windows.Forms.Label();
+            this.cmbNivelActividad = new System.Windows.Forms.ComboBox();
+            this.lblNivelActividad = new System.Windows.Forms.Label();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
+            this.lblGenero = new System.Windows.Forms.Label();
+            this.DateFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.lblFechaNacimiento = new System.Windows.Forms.Label();
+            this.nupEstatura = new System.Windows.Forms.NumericUpDown();
+            this.lblEstatura = new System.Windows.Forms.Label();
+            this.nupPeso = new System.Windows.Forms.NumericUpDown();
+            this.lblPeso = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineDividir = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineNombre = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineApellido = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panelSuperior.SuspendLayout();
-            this.panelPrincipal.SuspendLayout();
-            this.panelPrincipalContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizarRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            this.panelPrincipal.SuspendLayout();
+            this.panelPrincipalContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupBMR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupBMI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupEstatura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupPeso)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSuperior
@@ -87,244 +87,6 @@
             this.panelSuperior.Size = new System.Drawing.Size(800, 28);
             this.panelSuperior.TabIndex = 3;
             this.panelSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSuperior_MouseDown);
-            // 
-            // panelPrincipal
-            // 
-            this.panelPrincipal.Controls.Add(this.panelPrincipalContenedor);
-            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipal.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelPrincipal.Location = new System.Drawing.Point(0, 28);
-            this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
-            this.panelPrincipal.Size = new System.Drawing.Size(800, 422);
-            this.panelPrincipal.TabIndex = 4;
-            // 
-            // panelPrincipalContenedor
-            // 
-            this.panelPrincipalContenedor.Controls.Add(this.label9);
-            this.panelPrincipalContenedor.Controls.Add(this.textBox1);
-            this.panelPrincipalContenedor.Controls.Add(this.label8);
-            this.panelPrincipalContenedor.Controls.Add(this.numericUpDown3);
-            this.panelPrincipalContenedor.Controls.Add(this.label6);
-            this.panelPrincipalContenedor.Controls.Add(this.numericUpDown4);
-            this.panelPrincipalContenedor.Controls.Add(this.label7);
-            this.panelPrincipalContenedor.Controls.Add(this.comboBox2);
-            this.panelPrincipalContenedor.Controls.Add(this.label5);
-            this.panelPrincipalContenedor.Controls.Add(this.comboBox1);
-            this.panelPrincipalContenedor.Controls.Add(this.label4);
-            this.panelPrincipalContenedor.Controls.Add(this.dateTimePicker1);
-            this.panelPrincipalContenedor.Controls.Add(this.label3);
-            this.panelPrincipalContenedor.Controls.Add(this.numericUpDown2);
-            this.panelPrincipalContenedor.Controls.Add(this.label1);
-            this.panelPrincipalContenedor.Controls.Add(this.numericUpDown1);
-            this.panelPrincipalContenedor.Controls.Add(this.label2);
-            this.panelPrincipalContenedor.Controls.Add(this.lblApellido);
-            this.panelPrincipalContenedor.Controls.Add(this.txtApellido);
-            this.panelPrincipalContenedor.Controls.Add(this.lblNombre);
-            this.panelPrincipalContenedor.Controls.Add(this.btnRegistrar);
-            this.panelPrincipalContenedor.Controls.Add(this.txtNombre);
-            this.panelPrincipalContenedor.Controls.Add(this.shapeContainer1);
-            this.panelPrincipalContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipalContenedor.ForeColor = System.Drawing.Color.White;
-            this.panelPrincipalContenedor.Location = new System.Drawing.Point(20, 10);
-            this.panelPrincipalContenedor.MaximumSize = new System.Drawing.Size(900, 0);
-            this.panelPrincipalContenedor.Name = "panelPrincipalContenedor";
-            this.panelPrincipalContenedor.Size = new System.Drawing.Size(760, 402);
-            this.panelPrincipalContenedor.TabIndex = 1;
-            this.panelPrincipalContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipalContenedor_Paint);
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnRegistrar.Location = new System.Drawing.Point(616, 223);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(132, 35);
-            this.btnRegistrar.TabIndex = 0;
-            this.btnRegistrar.Text = "Calcular";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.ForeColor = System.Drawing.Color.Gray;
-            this.txtNombre.Location = new System.Drawing.Point(17, 33);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(288, 26);
-            this.txtNombre.TabIndex = 1;
-            this.txtNombre.Text = "Nombre Del Usuario";
-            this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
-            this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(15, 33);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(213, 24);
-            this.lblNombre.TabIndex = 3;
-            this.lblNombre.Text = "Nombre Del Usuario";
-            this.lblNombre.Visible = false;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1,
-            this.lineNombre,
-            this.lineApellido});
-            this.shapeContainer1.Size = new System.Drawing.Size(760, 402);
-            this.shapeContainer1.TabIndex = 2;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lblApellido
-            // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(13, 113);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(212, 24);
-            this.lblApellido.TabIndex = 5;
-            this.lblApellido.Text = "Apellido Del Usuario";
-            this.lblApellido.Visible = false;
-            this.lblApellido.Click += new System.EventHandler(this.lblApellido_Click);
-            // 
-            // txtApellido
-            // 
-            this.txtApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellido.ForeColor = System.Drawing.Color.Gray;
-            this.txtApellido.Location = new System.Drawing.Point(17, 113);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(288, 26);
-            this.txtApellido.TabIndex = 4;
-            this.txtApellido.Text = "Apellido Del Usuario";
-            this.txtApellido.Enter += new System.EventHandler(this.txtApellido_Enter);
-            this.txtApellido.Leave += new System.EventHandler(this.txtApellido_Leave);
-            // 
-            // lineApellido
-            // 
-            this.lineApellido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lineApellido.Name = "lineApellido";
-            this.lineApellido.X1 = 16;
-            this.lineApellido.X2 = 303;
-            this.lineApellido.Y1 = 139;
-            this.lineApellido.Y2 = 139;
-            this.lineApellido.Click += new System.EventHandler(this.lineShape2_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 173);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 24);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Peso (KG)";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown1.DecimalPlaces = 2;
-            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown1.Location = new System.Drawing.Point(180, 168);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            1410065407,
-            2,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1215752191,
-            23,
-            0,
-            -2147483648});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown1.Size = new System.Drawing.Size(122, 33);
-            this.numericUpDown1.TabIndex = 8;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown1.ThousandsSeparator = true;
-            // 
-            // lineNombre
-            // 
-            this.lineNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lineNombre.Name = "lineNombre";
-            this.lineNombre.X1 = 17;
-            this.lineNombre.X2 = 304;
-            this.lineNombre.Y1 = 60;
-            this.lineNombre.Y2 = 60;
-            this.lineNombre.Click += new System.EventHandler(this.lineShape1_Click);
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown2.DecimalPlaces = 2;
-            this.numericUpDown2.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown2.Location = new System.Drawing.Point(179, 226);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            1410065407,
-            2,
-            0,
-            0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            1410065407,
-            2,
-            0,
-            -2147483648});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown2.Size = new System.Drawing.Size(122, 33);
-            this.numericUpDown2.TabIndex = 10;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown2.ThousandsSeparator = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 231);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 24);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Estatura (CM)";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(342, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 24);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Fecha Nacimiento";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.White;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.Transparent;
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.White;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.dateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dateTimePicker1.Location = new System.Drawing.Point(346, 31);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(414, 33);
-            this.dateTimePicker1.TabIndex = 12;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(342, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Genero";
             // 
             // btnCerrar
             // 
@@ -359,145 +121,384 @@
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // comboBox1
+            // panelPrincipal
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(443, 77);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(317, 32);
-            this.comboBox1.TabIndex = 14;
+            this.panelPrincipal.Controls.Add(this.panelPrincipalContenedor);
+            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPrincipal.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelPrincipal.Location = new System.Drawing.Point(0, 28);
+            this.panelPrincipal.Name = "panelPrincipal";
+            this.panelPrincipal.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.panelPrincipal.Size = new System.Drawing.Size(800, 422);
+            this.panelPrincipal.TabIndex = 4;
             // 
-            // comboBox2
+            // panelPrincipalContenedor
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox2.ForeColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(346, 173);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(414, 32);
-            this.comboBox2.TabIndex = 16;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.panelPrincipalContenedor.Controls.Add(this.lblNivelActividadDescripcion);
+            this.panelPrincipalContenedor.Controls.Add(this.txtaNivelActividad);
+            this.panelPrincipalContenedor.Controls.Add(this.lblEstadoPeso);
+            this.panelPrincipalContenedor.Controls.Add(this.nupBMR);
+            this.panelPrincipalContenedor.Controls.Add(this.lblBMR);
+            this.panelPrincipalContenedor.Controls.Add(this.nupBMI);
+            this.panelPrincipalContenedor.Controls.Add(this.lblBMI);
+            this.panelPrincipalContenedor.Controls.Add(this.cmbNivelActividad);
+            this.panelPrincipalContenedor.Controls.Add(this.lblNivelActividad);
+            this.panelPrincipalContenedor.Controls.Add(this.cmbGenero);
+            this.panelPrincipalContenedor.Controls.Add(this.lblGenero);
+            this.panelPrincipalContenedor.Controls.Add(this.DateFechaNacimiento);
+            this.panelPrincipalContenedor.Controls.Add(this.lblFechaNacimiento);
+            this.panelPrincipalContenedor.Controls.Add(this.nupEstatura);
+            this.panelPrincipalContenedor.Controls.Add(this.lblEstatura);
+            this.panelPrincipalContenedor.Controls.Add(this.nupPeso);
+            this.panelPrincipalContenedor.Controls.Add(this.lblPeso);
+            this.panelPrincipalContenedor.Controls.Add(this.lblApellido);
+            this.panelPrincipalContenedor.Controls.Add(this.txtApellido);
+            this.panelPrincipalContenedor.Controls.Add(this.lblNombre);
+            this.panelPrincipalContenedor.Controls.Add(this.btnCalcular);
+            this.panelPrincipalContenedor.Controls.Add(this.txtNombre);
+            this.panelPrincipalContenedor.Controls.Add(this.shapeContainer1);
+            this.panelPrincipalContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPrincipalContenedor.ForeColor = System.Drawing.Color.White;
+            this.panelPrincipalContenedor.Location = new System.Drawing.Point(20, 10);
+            this.panelPrincipalContenedor.MaximumSize = new System.Drawing.Size(900, 0);
+            this.panelPrincipalContenedor.Name = "panelPrincipalContenedor";
+            this.panelPrincipalContenedor.Size = new System.Drawing.Size(760, 402);
+            this.panelPrincipalContenedor.TabIndex = 1;
+            this.panelPrincipalContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipalContenedor_Paint);
             // 
-            // label5
+            // lblNivelActividadDescripcion
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(342, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(200, 24);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Nivel De Actividad";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.lblNivelActividadDescripcion.AutoSize = true;
+            this.lblNivelActividadDescripcion.Location = new System.Drawing.Point(411, 293);
+            this.lblNivelActividadDescripcion.Name = "lblNivelActividadDescripcion";
+            this.lblNivelActividadDescripcion.Size = new System.Drawing.Size(200, 24);
+            this.lblNivelActividadDescripcion.TabIndex = 23;
+            this.lblNivelActividadDescripcion.Text = "Nivel De Actividad";
+            this.lblNivelActividadDescripcion.Click += new System.EventHandler(this.label9_Click);
             // 
-            // lineShape1
+            // txtaNivelActividad
             // 
-            this.lineShape1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 15;
-            this.lineShape1.X2 = 759;
-            this.lineShape1.Y1 = 275;
-            this.lineShape1.Y2 = 276;
-            this.lineShape1.Click += new System.EventHandler(this.lineShape2_Click);
+            this.txtaNivelActividad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtaNivelActividad.ForeColor = System.Drawing.Color.White;
+            this.txtaNivelActividad.Location = new System.Drawing.Point(408, 323);
+            this.txtaNivelActividad.Multiline = true;
+            this.txtaNivelActividad.Name = "txtaNivelActividad";
+            this.txtaNivelActividad.Size = new System.Drawing.Size(340, 76);
+            this.txtaNivelActividad.TabIndex = 22;
             // 
-            // numericUpDown3
+            // lblEstadoPeso
             // 
-            this.numericUpDown3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.numericUpDown3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown3.DecimalPlaces = 2;
-            this.numericUpDown3.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown3.Location = new System.Drawing.Point(103, 344);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.lblEstadoPeso.AutoSize = true;
+            this.lblEstadoPeso.Location = new System.Drawing.Point(249, 293);
+            this.lblEstadoPeso.Name = "lblEstadoPeso";
+            this.lblEstadoPeso.Size = new System.Drawing.Size(127, 24);
+            this.lblEstadoPeso.TabIndex = 21;
+            this.lblEstadoPeso.Text = "SobrePeso+";
+            // 
+            // nupBMR
+            // 
+            this.nupBMR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.nupBMR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nupBMR.DecimalPlaces = 2;
+            this.nupBMR.ForeColor = System.Drawing.Color.White;
+            this.nupBMR.Location = new System.Drawing.Point(103, 344);
+            this.nupBMR.Maximum = new decimal(new int[] {
             1410065407,
             2,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.nupBMR.Minimum = new decimal(new int[] {
             1410065407,
             2,
             0,
             -2147483648});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown3.Size = new System.Drawing.Size(122, 33);
-            this.numericUpDown3.TabIndex = 20;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown3.ThousandsSeparator = true;
+            this.nupBMR.Name = "nupBMR";
+            this.nupBMR.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.nupBMR.Size = new System.Drawing.Size(122, 33);
+            this.nupBMR.TabIndex = 20;
+            this.nupBMR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nupBMR.ThousandsSeparator = true;
             // 
-            // label6
+            // lblBMR
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 353);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 24);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "BMR";
+            this.lblBMR.AutoSize = true;
+            this.lblBMR.Location = new System.Drawing.Point(15, 353);
+            this.lblBMR.Name = "lblBMR";
+            this.lblBMR.Size = new System.Drawing.Size(54, 24);
+            this.lblBMR.TabIndex = 19;
+            this.lblBMR.Text = "BMR";
             // 
-            // numericUpDown4
+            // nupBMI
             // 
-            this.numericUpDown4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.numericUpDown4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown4.DecimalPlaces = 2;
-            this.numericUpDown4.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown4.Location = new System.Drawing.Point(103, 293);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.nupBMI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.nupBMI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nupBMI.DecimalPlaces = 2;
+            this.nupBMI.Enabled = false;
+            this.nupBMI.ForeColor = System.Drawing.Color.White;
+            this.nupBMI.Location = new System.Drawing.Point(103, 293);
+            this.nupBMI.Maximum = new decimal(new int[] {
             1410065407,
             2,
             0,
             0});
-            this.numericUpDown4.Minimum = new decimal(new int[] {
+            this.nupBMI.Minimum = new decimal(new int[] {
             1215752191,
             23,
             0,
             -2147483648});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown4.Size = new System.Drawing.Size(122, 33);
-            this.numericUpDown4.TabIndex = 18;
-            this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numericUpDown4.ThousandsSeparator = true;
+            this.nupBMI.Name = "nupBMI";
+            this.nupBMI.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.nupBMI.Size = new System.Drawing.Size(122, 33);
+            this.nupBMI.TabIndex = 18;
+            this.nupBMI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nupBMI.ThousandsSeparator = true;
             // 
-            // label7
+            // lblBMI
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 295);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 24);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "BMI";
+            this.lblBMI.AutoSize = true;
+            this.lblBMI.Location = new System.Drawing.Point(15, 295);
+            this.lblBMI.Name = "lblBMI";
+            this.lblBMI.Size = new System.Drawing.Size(46, 24);
+            this.lblBMI.TabIndex = 17;
+            this.lblBMI.Text = "BMI";
             // 
-            // label8
+            // cmbNivelActividad
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(249, 293);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 24);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "SobrePeso+";
+            this.cmbNivelActividad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.cmbNivelActividad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmbNivelActividad.ForeColor = System.Drawing.Color.White;
+            this.cmbNivelActividad.FormattingEnabled = true;
+            this.cmbNivelActividad.Location = new System.Drawing.Point(346, 173);
+            this.cmbNivelActividad.Name = "cmbNivelActividad";
+            this.cmbNivelActividad.Size = new System.Drawing.Size(414, 32);
+            this.cmbNivelActividad.TabIndex = 16;
+            this.cmbNivelActividad.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // textBox1
+            // lblNivelActividad
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(408, 323);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 76);
-            this.textBox1.TabIndex = 22;
+            this.lblNivelActividad.AutoSize = true;
+            this.lblNivelActividad.Location = new System.Drawing.Point(342, 139);
+            this.lblNivelActividad.Name = "lblNivelActividad";
+            this.lblNivelActividad.Size = new System.Drawing.Size(200, 24);
+            this.lblNivelActividad.TabIndex = 15;
+            this.lblNivelActividad.Text = "Nivel De Actividad";
+            this.lblNivelActividad.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label9
+            // cmbGenero
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(411, 293);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(200, 24);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Nivel De Actividad";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.cmbGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.cmbGenero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmbGenero.ForeColor = System.Drawing.Color.White;
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Location = new System.Drawing.Point(443, 77);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(317, 32);
+            this.cmbGenero.TabIndex = 14;
+            // 
+            // lblGenero
+            // 
+            this.lblGenero.AutoSize = true;
+            this.lblGenero.Location = new System.Drawing.Point(342, 80);
+            this.lblGenero.Name = "lblGenero";
+            this.lblGenero.Size = new System.Drawing.Size(89, 24);
+            this.lblGenero.TabIndex = 13;
+            this.lblGenero.Text = "Genero";
+            // 
+            // DateFechaNacimiento
+            // 
+            this.DateFechaNacimiento.CalendarFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DateFechaNacimiento.CalendarForeColor = System.Drawing.Color.White;
+            this.DateFechaNacimiento.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.DateFechaNacimiento.CalendarTitleBackColor = System.Drawing.Color.White;
+            this.DateFechaNacimiento.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.DateFechaNacimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DateFechaNacimiento.Location = new System.Drawing.Point(346, 31);
+            this.DateFechaNacimiento.Name = "DateFechaNacimiento";
+            this.DateFechaNacimiento.Size = new System.Drawing.Size(414, 33);
+            this.DateFechaNacimiento.TabIndex = 12;
+            // 
+            // lblFechaNacimiento
+            // 
+            this.lblFechaNacimiento.AutoSize = true;
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(342, 4);
+            this.lblFechaNacimiento.Name = "lblFechaNacimiento";
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(200, 24);
+            this.lblFechaNacimiento.TabIndex = 11;
+            this.lblFechaNacimiento.Text = "Fecha Nacimiento";
+            // 
+            // nupEstatura
+            // 
+            this.nupEstatura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.nupEstatura.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nupEstatura.DecimalPlaces = 2;
+            this.nupEstatura.ForeColor = System.Drawing.Color.White;
+            this.nupEstatura.Location = new System.Drawing.Point(179, 226);
+            this.nupEstatura.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
+            this.nupEstatura.Minimum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            -2147483648});
+            this.nupEstatura.Name = "nupEstatura";
+            this.nupEstatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.nupEstatura.Size = new System.Drawing.Size(122, 33);
+            this.nupEstatura.TabIndex = 10;
+            this.nupEstatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nupEstatura.ThousandsSeparator = true;
+            // 
+            // lblEstatura
+            // 
+            this.lblEstatura.AutoSize = true;
+            this.lblEstatura.Location = new System.Drawing.Point(15, 231);
+            this.lblEstatura.Name = "lblEstatura";
+            this.lblEstatura.Size = new System.Drawing.Size(147, 24);
+            this.lblEstatura.TabIndex = 9;
+            this.lblEstatura.Text = "Estatura (CM)";
+            // 
+            // nupPeso
+            // 
+            this.nupPeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.nupPeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nupPeso.DecimalPlaces = 2;
+            this.nupPeso.ForeColor = System.Drawing.Color.White;
+            this.nupPeso.Location = new System.Drawing.Point(180, 168);
+            this.nupPeso.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
+            this.nupPeso.Minimum = new decimal(new int[] {
+            1215752191,
+            23,
+            0,
+            -2147483648});
+            this.nupPeso.Name = "nupPeso";
+            this.nupPeso.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.nupPeso.Size = new System.Drawing.Size(122, 33);
+            this.nupPeso.TabIndex = 8;
+            this.nupPeso.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nupPeso.ThousandsSeparator = true;
+            // 
+            // lblPeso
+            // 
+            this.lblPeso.AutoSize = true;
+            this.lblPeso.Location = new System.Drawing.Point(15, 173);
+            this.lblPeso.Name = "lblPeso";
+            this.lblPeso.Size = new System.Drawing.Size(109, 24);
+            this.lblPeso.TabIndex = 7;
+            this.lblPeso.Text = "Peso (KG)";
+            this.lblPeso.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Location = new System.Drawing.Point(13, 113);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(212, 24);
+            this.lblApellido.TabIndex = 5;
+            this.lblApellido.Text = "Apellido Del Usuario";
+            this.lblApellido.Visible = false;
+            this.lblApellido.Click += new System.EventHandler(this.lblApellido_Click);
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellido.ForeColor = System.Drawing.Color.Gray;
+            this.txtApellido.Location = new System.Drawing.Point(17, 113);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(288, 26);
+            this.txtApellido.TabIndex = 4;
+            this.txtApellido.Text = "Apellido Del Usuario";
+            this.txtApellido.Enter += new System.EventHandler(this.txtApellido_Enter);
+            this.txtApellido.Leave += new System.EventHandler(this.txtApellido_Leave);
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(15, 33);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(213, 24);
+            this.lblNombre.TabIndex = 3;
+            this.lblNombre.Text = "Nombre Del Usuario";
+            this.lblNombre.Visible = false;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCalcular.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCalcular.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcular.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCalcular.Location = new System.Drawing.Point(616, 223);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(132, 35);
+            this.btnCalcular.TabIndex = 0;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombre.ForeColor = System.Drawing.Color.Gray;
+            this.txtNombre.Location = new System.Drawing.Point(17, 33);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(288, 26);
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.Text = "Nombre Del Usuario";
+            this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
+            this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineDividir,
+            this.lineNombre,
+            this.lineApellido});
+            this.shapeContainer1.Size = new System.Drawing.Size(760, 402);
+            this.shapeContainer1.TabIndex = 2;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineDividir
+            // 
+            this.lineDividir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lineDividir.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lineDividir.Name = "lineDividir";
+            this.lineDividir.X1 = 15;
+            this.lineDividir.X2 = 759;
+            this.lineDividir.Y1 = 275;
+            this.lineDividir.Y2 = 275;
+            this.lineDividir.Click += new System.EventHandler(this.lineShape2_Click);
+            // 
+            // lineNombre
+            // 
+            this.lineNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lineNombre.Name = "lineNombre";
+            this.lineNombre.X1 = 17;
+            this.lineNombre.X2 = 304;
+            this.lineNombre.Y1 = 60;
+            this.lineNombre.Y2 = 60;
+            this.lineNombre.Click += new System.EventHandler(this.lineShape1_Click);
+            // 
+            // lineApellido
+            // 
+            this.lineApellido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lineApellido.Name = "lineApellido";
+            this.lineApellido.X1 = 16;
+            this.lineApellido.X2 = 303;
+            this.lineApellido.Y1 = 139;
+            this.lineApellido.Y2 = 139;
+            this.lineApellido.Click += new System.EventHandler(this.lineShape2_Click);
             // 
             // AgregarUsuario
             // 
@@ -513,17 +514,18 @@
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarUsuario";
+            this.Resize += new System.EventHandler(this.AgregarUsuario_Resize);
             this.panelSuperior.ResumeLayout(false);
-            this.panelPrincipal.ResumeLayout(false);
-            this.panelPrincipalContenedor.ResumeLayout(false);
-            this.panelPrincipalContenedor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizarRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            this.panelPrincipal.ResumeLayout(false);
+            this.panelPrincipalContenedor.ResumeLayout(false);
+            this.panelPrincipalContenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupBMR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupBMI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupEstatura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupPeso)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -536,31 +538,31 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Panel panelPrincipal;
         private System.Windows.Forms.Panel panelPrincipalContenedor;
-        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPeso;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.TextBox txtApellido;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineApellido;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nupPeso;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineNombre;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.NumericUpDown nupEstatura;
+        private System.Windows.Forms.Label lblEstatura;
+        private System.Windows.Forms.DateTimePicker DateFechaNacimiento;
+        private System.Windows.Forms.Label lblFechaNacimiento;
+        private System.Windows.Forms.Label lblGenero;
+        private System.Windows.Forms.ComboBox cmbNivelActividad;
+        private System.Windows.Forms.Label lblNivelActividad;
+        private System.Windows.Forms.ComboBox cmbGenero;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineDividir;
+        private System.Windows.Forms.NumericUpDown nupBMR;
+        private System.Windows.Forms.Label lblBMR;
+        private System.Windows.Forms.NumericUpDown nupBMI;
+        private System.Windows.Forms.Label lblBMI;
+        private System.Windows.Forms.Label lblNivelActividadDescripcion;
+        private System.Windows.Forms.TextBox txtaNivelActividad;
+        private System.Windows.Forms.Label lblEstadoPeso;
     }
 }
