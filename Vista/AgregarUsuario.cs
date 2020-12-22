@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class Agregar_Usuario : Form
+    public partial class AgregarUsuario : Form
     {
-        public Agregar_Usuario()
+        public AgregarUsuario()
         {
             InitializeComponent();
         }

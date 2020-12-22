@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class Agregar_Usuario
+    partial class AgregarUsuario
     {
         /// <summary>
         /// Required designer variable.
