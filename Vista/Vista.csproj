@@ -93,10 +93,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cerrar %281%29.png" />
+    <None Include="Resources\Cerrar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Minimize_Icon.png" />
+    <None Include="Resources\Minimizar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
