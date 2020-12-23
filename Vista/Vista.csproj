@@ -68,6 +68,12 @@
     <Compile Include="ConsultarUsuario.Designer.cs">
       <DependentUpon>ConsultarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="MensajeModerno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeModerno.Designer.cs">
+      <DependentUpon>MensajeModerno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeModerno.resx">
+      <DependentUpon>MensajeModerno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -117,6 +126,21 @@
       <Project>{c454cf8e-cdcd-48a4-8140-350305d8f14b}</Project>
       <Name>Controlador</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navegador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

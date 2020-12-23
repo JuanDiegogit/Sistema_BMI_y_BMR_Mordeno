@@ -161,5 +161,67 @@ namespace Vista
             }
            
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            int errores = 0;
+            List<string> mensajesErrores = new List<string>();
+            if(nupPeso.Value < 1 && nupEstatura.Value < 1)
+            {
+                errores += 2;
+                mensajesErrores.Add("Debe seleccionar un Peso y estatura mayor a cero(0)");
+            }
+            else
+            {
+                if (nupPeso.Value < 1)
+                {
+                    errores++;
+                    mensajesErrores.Add("Debe seleccionar un Peso mayor a cero(0)");
+                }
+                if (nupEstatura.Value < 1)
+                {
+                    errores++;
+                    mensajesErrores.Add("Debe seleccionar una estatura mayor a cero(0)");
+                }
+            }
+
+            if (txtNombre.Text =="Nombre Del Usuario" && txtApellido.Text == "Apellido Del Usuario")
+            {
+                errores += 2;
+                mensajesErrores.Add("Debe llenar nombre y apellido");
+            }
+            else
+            {
+                if (txtNombre.Text == "Nombre Del Usuario")
+                {
+                    errores++;
+                    mensajesErrores.Add("Debe llenar el nombre");
+                }
+                if (txtApellido.Text == "Nombre Del Usuario")
+                {
+                    errores++;
+                    mensajesErrores.Add("Debe llenar el apellido");
+                }
+            }
+
+
+
+            if (errores > 0)
+            {
+                String MensajeFinal = "";
+                if(errores > 1)
+                {
+                    MensajeFinal += "Se presentaron los siguientes errores\n\n";
+                }
+                foreach(String mensaje in mensajesErrores)
+                {
+                    MensajeFinal += "- "+mensaje+"\n";
+                }
+              
+                 new MensajeModerno(MensajeFinal,MensajeModerno.MENSAJE_ERROR,this) {  StartPosition = FormStartPosition.CenterScreen }.Show();
+               
+                return;
+            }
+        }
     }
 }
