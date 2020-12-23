@@ -30,8 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarUsuario));
             this.panelSuperior = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnMaximizarRestaurar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panelPrincipalContenedor = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.lblNivelActividadDescripcion = new System.Windows.Forms.Label();
             this.txtaNivelActividad = new System.Windows.Forms.TextBox();
             this.lblEstadoPeso = new System.Windows.Forms.Label();
@@ -58,19 +63,16 @@
             this.lineDividir = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineNombre = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineApellido = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizarRestaurar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelSuperior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizarRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.panelPrincipal.SuspendLayout();
             this.panelPrincipalContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupBMR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupBMI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupEstatura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupPeso)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizarRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSuperior
@@ -88,6 +90,39 @@
             this.panelSuperior.TabIndex = 3;
             this.panelSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSuperior_MouseDown);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = global::Vista.Properties.Resources.cerrar;
+            this.btnCerrar.Location = new System.Drawing.Point(775, 5);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMaximizarRestaurar
+            // 
+            this.btnMaximizarRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizarRestaurar.Image")));
+            this.btnMaximizarRestaurar.Location = new System.Drawing.Point(749, 5);
+            this.btnMaximizarRestaurar.Name = "btnMaximizarRestaurar";
+            this.btnMaximizarRestaurar.Size = new System.Drawing.Size(20, 20);
+            this.btnMaximizarRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizarRestaurar.TabIndex = 2;
+            this.btnMaximizarRestaurar.TabStop = false;
+            this.btnMaximizarRestaurar.Click += new System.EventHandler(this.btnMaximizarRestaurar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(723, 5);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 3;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
             // panelPrincipal
             // 
             this.panelPrincipal.Controls.Add(this.panelPrincipalContenedor);
@@ -96,11 +131,13 @@
             this.panelPrincipal.Location = new System.Drawing.Point(0, 28);
             this.panelPrincipal.Name = "panelPrincipal";
             this.panelPrincipal.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
-            this.panelPrincipal.Size = new System.Drawing.Size(800, 422);
+            this.panelPrincipal.Size = new System.Drawing.Size(800, 472);
             this.panelPrincipal.TabIndex = 4;
             // 
             // panelPrincipalContenedor
             // 
+            this.panelPrincipalContenedor.Controls.Add(this.btnSalir);
+            this.panelPrincipalContenedor.Controls.Add(this.btnGuardar);
             this.panelPrincipalContenedor.Controls.Add(this.lblNivelActividadDescripcion);
             this.panelPrincipalContenedor.Controls.Add(this.txtaNivelActividad);
             this.panelPrincipalContenedor.Controls.Add(this.lblEstadoPeso);
@@ -129,9 +166,40 @@
             this.panelPrincipalContenedor.Location = new System.Drawing.Point(20, 10);
             this.panelPrincipalContenedor.MaximumSize = new System.Drawing.Size(900, 0);
             this.panelPrincipalContenedor.Name = "panelPrincipalContenedor";
-            this.panelPrincipalContenedor.Size = new System.Drawing.Size(760, 402);
+            this.panelPrincipalContenedor.Size = new System.Drawing.Size(760, 452);
             this.panelPrincipalContenedor.TabIndex = 1;
-            this.panelPrincipalContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipalContenedor_Paint);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSalir.ForeColor = System.Drawing.Color.Red;
+            this.btnSalir.Location = new System.Drawing.Point(179, 403);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(143, 35);
+            this.btnSalir.TabIndex = 25;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnGuardar.Location = new System.Drawing.Point(19, 403);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(132, 35);
+            this.btnGuardar.TabIndex = 24;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // lblNivelActividadDescripcion
             // 
@@ -141,16 +209,16 @@
             this.lblNivelActividadDescripcion.Size = new System.Drawing.Size(200, 24);
             this.lblNivelActividadDescripcion.TabIndex = 23;
             this.lblNivelActividadDescripcion.Text = "Nivel De Actividad";
-            this.lblNivelActividadDescripcion.Click += new System.EventHandler(this.label9_Click);
             // 
             // txtaNivelActividad
             // 
             this.txtaNivelActividad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtaNivelActividad.Enabled = false;
             this.txtaNivelActividad.ForeColor = System.Drawing.Color.White;
             this.txtaNivelActividad.Location = new System.Drawing.Point(408, 323);
             this.txtaNivelActividad.Multiline = true;
             this.txtaNivelActividad.Name = "txtaNivelActividad";
-            this.txtaNivelActividad.Size = new System.Drawing.Size(340, 76);
+            this.txtaNivelActividad.Size = new System.Drawing.Size(340, 115);
             this.txtaNivelActividad.TabIndex = 22;
             // 
             // lblEstadoPeso
@@ -167,6 +235,7 @@
             this.nupBMR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.nupBMR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nupBMR.DecimalPlaces = 2;
+            this.nupBMR.Enabled = false;
             this.nupBMR.ForeColor = System.Drawing.Color.White;
             this.nupBMR.Location = new System.Drawing.Point(103, 344);
             this.nupBMR.Maximum = new decimal(new int[] {
@@ -239,7 +308,6 @@
             this.cmbNivelActividad.Name = "cmbNivelActividad";
             this.cmbNivelActividad.Size = new System.Drawing.Size(414, 32);
             this.cmbNivelActividad.TabIndex = 16;
-            this.cmbNivelActividad.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // lblNivelActividad
             // 
@@ -249,7 +317,6 @@
             this.lblNivelActividad.Size = new System.Drawing.Size(200, 24);
             this.lblNivelActividad.TabIndex = 15;
             this.lblNivelActividad.Text = "Nivel De Actividad";
-            this.lblNivelActividad.Click += new System.EventHandler(this.label5_Click);
             // 
             // cmbGenero
             // 
@@ -358,7 +425,6 @@
             this.lblPeso.Size = new System.Drawing.Size(109, 24);
             this.lblPeso.TabIndex = 7;
             this.lblPeso.Text = "Peso (KG)";
-            this.lblPeso.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblApellido
             // 
@@ -402,7 +468,7 @@
             this.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCalcular.Location = new System.Drawing.Point(616, 223);
+            this.btnCalcular.Location = new System.Drawing.Point(617, 231);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(132, 35);
             this.btnCalcular.TabIndex = 0;
@@ -432,7 +498,7 @@
             this.lineDividir,
             this.lineNombre,
             this.lineApellido});
-            this.shapeContainer1.Size = new System.Drawing.Size(760, 402);
+            this.shapeContainer1.Size = new System.Drawing.Size(760, 452);
             this.shapeContainer1.TabIndex = 2;
             this.shapeContainer1.TabStop = false;
             // 
@@ -446,7 +512,6 @@
             this.lineDividir.X2 = 759;
             this.lineDividir.Y1 = 275;
             this.lineDividir.Y2 = 275;
-            this.lineDividir.Click += new System.EventHandler(this.lineShape2_Click);
             // 
             // lineNombre
             // 
@@ -456,7 +521,6 @@
             this.lineNombre.X2 = 304;
             this.lineNombre.Y1 = 60;
             this.lineNombre.Y2 = 60;
-            this.lineNombre.Click += new System.EventHandler(this.lineShape1_Click);
             // 
             // lineApellido
             // 
@@ -466,47 +530,13 @@
             this.lineApellido.X2 = 303;
             this.lineApellido.Y1 = 139;
             this.lineApellido.Y2 = 139;
-            this.lineApellido.Click += new System.EventHandler(this.lineShape2_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Image = global::Vista.Properties.Resources.cerrar;
-            this.btnCerrar.Location = new System.Drawing.Point(775, 5);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 1;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // btnMaximizarRestaurar
-            // 
-            this.btnMaximizarRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizarRestaurar.Image")));
-            this.btnMaximizarRestaurar.Location = new System.Drawing.Point(749, 5);
-            this.btnMaximizarRestaurar.Name = "btnMaximizarRestaurar";
-            this.btnMaximizarRestaurar.Size = new System.Drawing.Size(20, 20);
-            this.btnMaximizarRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizarRestaurar.TabIndex = 2;
-            this.btnMaximizarRestaurar.TabStop = false;
-            this.btnMaximizarRestaurar.Click += new System.EventHandler(this.btnMaximizarRestaurar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(723, 5);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 3;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // AgregarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panelSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -515,8 +545,12 @@
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarUsuario";
+            this.Load += new System.EventHandler(this.AgregarUsuario_Load);
             this.Resize += new System.EventHandler(this.AgregarUsuario_Resize);
             this.panelSuperior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizarRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.panelPrincipal.ResumeLayout(false);
             this.panelPrincipalContenedor.ResumeLayout(false);
             this.panelPrincipalContenedor.PerformLayout();
@@ -524,9 +558,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nupBMI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupEstatura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupPeso)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizarRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -565,5 +596,7 @@
         private System.Windows.Forms.Label lblNivelActividadDescripcion;
         private System.Windows.Forms.TextBox txtaNivelActividad;
         private System.Windows.Forms.Label lblEstadoPeso;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

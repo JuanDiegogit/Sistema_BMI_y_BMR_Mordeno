@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controlador;
+using Modelo.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -83,33 +85,13 @@ namespace Vista
          
         }
 
-        private void panelPrincipalContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lineShape2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lineShape1_Click(object sender, EventArgs e)
-        {
-
-        }
-
        
         private void txtApellido_Enter(object sender, EventArgs e)
         {
             txtApellido.Text = "";
             txtApellido.ForeColor = Color.White;
             lblApellido.Visible = true;
-            lblApellido.Location = new Point(lblApellido.Location.X, 86);
+            lblApellido.Location = new Point(lblApellido.Location.X, 75);
         }
 
         private void lblApellido_Click(object sender, EventArgs e)
@@ -134,20 +116,7 @@ namespace Vista
             }
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void AgregarUsuario_Resize(object sender, EventArgs e)
         {
@@ -161,8 +130,23 @@ namespace Vista
             }
            
         }
+        private async void llenarComboSexo()
+        {
+           
+            cmbGenero.DataSource = await new AgregarUsuarioController().ObtenerSexoAsync();
+            cmbGenero.DisplayMember = "Sexo1";
+            cmbGenero.ValueMember = "ID";
+        }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private async void llenarComboNivelActividad()
+        {
+            
+            cmbNivelActividad.DataSource = await new AgregarUsuarioController().ObtenerNivelesActividadAsync();
+            cmbNivelActividad.DisplayMember = "Nombre";
+            cmbNivelActividad.ValueMember = "Descripcion";
+        }
+
+        private async void btnCalcular_Click(object sender, EventArgs e)
         {
             int errores = 0;
             List<string> mensajesErrores = new List<string>();
@@ -184,8 +168,65 @@ namespace Vista
                     mensajesErrores.Add("Debe seleccionar una estatura mayor a cero(0)");
                 }
             }
+            
 
-            if (txtNombre.Text =="Nombre Del Usuario" && txtApellido.Text == "Apellido Del Usuario")
+            if (errores > 0)
+            {
+                String MensajeFinal = "";
+                if(errores > 1)
+                {
+                    MensajeFinal += "Se presentaron las siguientes advertencias\n\n";
+                }
+                foreach(String mensaje in mensajesErrores)
+                {
+                    MensajeFinal += "- "+mensaje+"\n";
+                }
+              
+                 new MensajeModerno(MensajeFinal,MensajeModerno.MENSAJE_ADVERTENCIA,this) {  StartPosition = FormStartPosition.CenterScreen }.Show();
+               
+                return;
+            }
+            nupBMI.Value = nupPeso.Value / ((nupEstatura.Value / 100) * (nupEstatura.Value / 100));
+            if ((int)cmbGenero.SelectedValue==1)
+            {
+                nupBMR.Value = 66 + ((decimal)13.7 * nupEstatura.Value) + ((decimal)5 * nupEstatura.Value) - ((decimal)6.8 * (DateTime.Now.Year - DateFechaNacimiento.Value.Year));
+
+            }
+            else
+            {
+                nupBMR.Value = 655 + ((decimal)9.6 * nupEstatura.Value) + ((decimal)1.8 * nupEstatura.Value) - ((decimal)4.7 * (DateTime.Now.Year - DateFechaNacimiento.Value.Year));
+            }
+            txtaNivelActividad.Text = cmbNivelActividad.SelectedValue.ToString();
+            lblEstadoPeso.Text = "";
+            foreach (CATEGORIA cat in  (await new AgregarUsuarioController().ObtenerCategoriaAsync()))
+            {
+                if(nupBMI.Value>=cat.Minimo && nupBMI.Value <= cat.Maximo)
+                {
+                    lblEstadoPeso.Text = cat.Nombre;
+                    return;
+                }
+            }
+            
+
+        }
+
+        private void AgregarUsuario_Load(object sender, EventArgs e)
+        {
+            llenarComboSexo();
+            llenarComboNivelActividad();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private async void btnGuardar_Click(object sender, EventArgs e)
+        {
+            int errores = 0;
+            List<string> mensajesErrores = new List<string>();
+
+            if (txtNombre.Text == "Nombre Del Usuario" && txtApellido.Text == "Apellido Del Usuario")
             {
                 errores += 2;
                 mensajesErrores.Add("Debe llenar nombre y apellido");
@@ -209,18 +250,62 @@ namespace Vista
             if (errores > 0)
             {
                 String MensajeFinal = "";
-                if(errores > 1)
+                if (errores > 1)
                 {
-                    MensajeFinal += "Se presentaron los siguientes errores\n\n";
+                    MensajeFinal += "Se presentaron las siguientes advertencias\n\n";
                 }
-                foreach(String mensaje in mensajesErrores)
+                foreach (String mensaje in mensajesErrores)
                 {
-                    MensajeFinal += "- "+mensaje+"\n";
+                    MensajeFinal += "- " + mensaje + "\n";
                 }
-              
-                 new MensajeModerno(MensajeFinal,MensajeModerno.MENSAJE_ERROR,this) {  StartPosition = FormStartPosition.CenterScreen }.Show();
-               
+
+                new MensajeModerno(MensajeFinal, MensajeModerno.MENSAJE_ADVERTENCIA, this) { StartPosition = FormStartPosition.CenterScreen }.Show();
+
                 return;
+            }
+
+            btnCalcular_Click(sender, e);
+            int sexoID = (int)cmbGenero.SelectedValue;
+            int nivelActividad = (await new AgregarUsuarioController().ObtenerNivelesActividadAsync()).FirstOrDefault(x=>x.Descripcion == cmbNivelActividad.SelectedValue.ToString()).ID;
+
+            if ((await new AgregarUsuarioController().GuardarUsuarioAsync(new USUARIO() {
+                Nombre = txtNombre.Text,
+                Apellido = txtApellido.Text,
+                BMI = nupBMI.Value,
+                BMR = nupBMR.Value,
+                Estatura = nupEstatura.Value,
+                FechaNacimiento = DateFechaNacimiento.Value,
+                NivelActividad = (int?) nivelActividad,
+                Peso = nupPeso.Value,
+                SexoID = sexoID
+            })) > 0)
+            {
+                new MensajeModerno("Se ha guardado correctamente", MensajeModerno.MENSAJE_EXITO, this) { StartPosition = FormStartPosition.CenterScreen }.Show();
+                foreach (Control control in panelPrincipalContenedor.Controls)
+                {
+                    if(control is TextBox)
+                    {
+                        control.Text = "";
+                    }else if(control is ComboBox)
+                    {
+                        (control as ComboBox).SelectedIndex = 0;
+                    }
+                    else if (control is NumericUpDown)
+                    {
+                        (control as NumericUpDown).Value = 0;
+                    }
+                    else if (control is DateTimePicker)
+                    {
+                        (control as DateTimePicker).Value = DateTime.Now;
+                    }
+                }
+                txtNombre_Leave(sender,e);
+                txtApellido_Leave(sender,e);
+            }
+            else
+            {
+                new MensajeModerno("No se ha guardado", MensajeModerno.MENSAJE_ERROR, this) { StartPosition = FormStartPosition.CenterScreen }.Show();
+
             }
         }
     }
