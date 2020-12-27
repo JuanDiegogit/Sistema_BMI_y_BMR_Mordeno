@@ -131,10 +131,12 @@ namespace Vista
             if(this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
+                this.Padding = new Padding(0);
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
+                this.Padding = new Padding(1);
             }
          
         }
