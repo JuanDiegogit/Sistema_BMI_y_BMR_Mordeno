@@ -123,9 +123,8 @@ namespace Vista
             int categoriaID = 0;
             if (cmbFactorActividad.SelectedValue != null)
             {
-                int.TryParse(cmbFactorActividad.SelectedValue.ToString(), out categoriaID);
+                categoriaID = (int)cmbCategoria.SelectedValue;
             }
-          
             CATEGORIA Categoria = (await new ConsultarUsuarioController().ObtenerCategoriaID(categoriaID));
            
 
