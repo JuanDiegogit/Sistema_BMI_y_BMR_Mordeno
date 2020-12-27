@@ -38,7 +38,6 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblNivelActividadDescripcion = new System.Windows.Forms.Label();
-            this.txtaNivelActividad = new System.Windows.Forms.TextBox();
             this.lblEstadoPeso = new System.Windows.Forms.Label();
             this.nupBMR = new System.Windows.Forms.NumericUpDown();
             this.lblBMR = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.lineDividir = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineNombre = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineApellido = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.txtaNivelActividad = new System.Windows.Forms.TextBox();
             this.panelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizarRestaurar)).BeginInit();
@@ -82,18 +82,18 @@
             this.panelSuperior.Controls.Add(this.btnMaximizarRestaurar);
             this.panelSuperior.Controls.Add(this.btnMinimizar);
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSuperior.Location = new System.Drawing.Point(0, 0);
+            this.panelSuperior.Location = new System.Drawing.Point(1, 1);
             this.panelSuperior.Name = "panelSuperior";
             this.panelSuperior.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
             this.panelSuperior.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.panelSuperior.Size = new System.Drawing.Size(800, 28);
+            this.panelSuperior.Size = new System.Drawing.Size(798, 28);
             this.panelSuperior.TabIndex = 3;
             this.panelSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSuperior_MouseDown);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Image = global::Vista.Properties.Resources.cerrar;
-            this.btnCerrar.Location = new System.Drawing.Point(775, 5);
+            this.btnCerrar.Location = new System.Drawing.Point(773, 5);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -104,7 +104,7 @@
             // btnMaximizarRestaurar
             // 
             this.btnMaximizarRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizarRestaurar.Image")));
-            this.btnMaximizarRestaurar.Location = new System.Drawing.Point(749, 5);
+            this.btnMaximizarRestaurar.Location = new System.Drawing.Point(747, 5);
             this.btnMaximizarRestaurar.Name = "btnMaximizarRestaurar";
             this.btnMaximizarRestaurar.Size = new System.Drawing.Size(20, 20);
             this.btnMaximizarRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,7 +115,7 @@
             // btnMinimizar
             // 
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(723, 5);
+            this.btnMinimizar.Location = new System.Drawing.Point(721, 5);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,21 +125,23 @@
             // 
             // panelPrincipal
             // 
+            this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.panelPrincipal.Controls.Add(this.panelPrincipalContenedor);
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelPrincipal.Location = new System.Drawing.Point(0, 28);
+            this.panelPrincipal.Location = new System.Drawing.Point(1, 29);
             this.panelPrincipal.Name = "panelPrincipal";
             this.panelPrincipal.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
-            this.panelPrincipal.Size = new System.Drawing.Size(800, 472);
+            this.panelPrincipal.Size = new System.Drawing.Size(798, 470);
             this.panelPrincipal.TabIndex = 4;
             // 
             // panelPrincipalContenedor
             // 
+            this.panelPrincipalContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.panelPrincipalContenedor.Controls.Add(this.txtaNivelActividad);
             this.panelPrincipalContenedor.Controls.Add(this.btnSalir);
             this.panelPrincipalContenedor.Controls.Add(this.btnGuardar);
             this.panelPrincipalContenedor.Controls.Add(this.lblNivelActividadDescripcion);
-            this.panelPrincipalContenedor.Controls.Add(this.txtaNivelActividad);
             this.panelPrincipalContenedor.Controls.Add(this.lblEstadoPeso);
             this.panelPrincipalContenedor.Controls.Add(this.nupBMR);
             this.panelPrincipalContenedor.Controls.Add(this.lblBMR);
@@ -166,7 +168,7 @@
             this.panelPrincipalContenedor.Location = new System.Drawing.Point(20, 10);
             this.panelPrincipalContenedor.MaximumSize = new System.Drawing.Size(900, 0);
             this.panelPrincipalContenedor.Name = "panelPrincipalContenedor";
-            this.panelPrincipalContenedor.Size = new System.Drawing.Size(760, 452);
+            this.panelPrincipalContenedor.Size = new System.Drawing.Size(758, 450);
             this.panelPrincipalContenedor.TabIndex = 1;
             // 
             // btnSalir
@@ -187,13 +189,12 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnGuardar.Location = new System.Drawing.Point(19, 403);
+            this.btnGuardar.Location = new System.Drawing.Point(17, 403);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(132, 35);
             this.btnGuardar.TabIndex = 24;
@@ -210,25 +211,13 @@
             this.lblNivelActividadDescripcion.TabIndex = 23;
             this.lblNivelActividadDescripcion.Text = "Nivel De Actividad";
             // 
-            // txtaNivelActividad
-            // 
-            this.txtaNivelActividad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtaNivelActividad.Enabled = false;
-            this.txtaNivelActividad.ForeColor = System.Drawing.Color.White;
-            this.txtaNivelActividad.Location = new System.Drawing.Point(408, 323);
-            this.txtaNivelActividad.Multiline = true;
-            this.txtaNivelActividad.Name = "txtaNivelActividad";
-            this.txtaNivelActividad.Size = new System.Drawing.Size(340, 115);
-            this.txtaNivelActividad.TabIndex = 22;
-            // 
             // lblEstadoPeso
             // 
             this.lblEstadoPeso.AutoSize = true;
             this.lblEstadoPeso.Location = new System.Drawing.Point(249, 293);
             this.lblEstadoPeso.Name = "lblEstadoPeso";
-            this.lblEstadoPeso.Size = new System.Drawing.Size(127, 24);
+            this.lblEstadoPeso.Size = new System.Drawing.Size(0, 24);
             this.lblEstadoPeso.TabIndex = 21;
-            this.lblEstadoPeso.Text = "SobrePeso+";
             // 
             // nupBMR
             // 
@@ -468,7 +457,7 @@
             this.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCalcular.Location = new System.Drawing.Point(617, 231);
+            this.btnCalcular.Location = new System.Drawing.Point(615, 231);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(132, 35);
             this.btnCalcular.TabIndex = 0;
@@ -498,7 +487,7 @@
             this.lineDividir,
             this.lineNombre,
             this.lineApellido});
-            this.shapeContainer1.Size = new System.Drawing.Size(760, 452);
+            this.shapeContainer1.Size = new System.Drawing.Size(758, 450);
             this.shapeContainer1.TabIndex = 2;
             this.shapeContainer1.TabStop = false;
             // 
@@ -509,7 +498,7 @@
             this.lineDividir.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lineDividir.Name = "lineDividir";
             this.lineDividir.X1 = 15;
-            this.lineDividir.X2 = 759;
+            this.lineDividir.X2 = 757;
             this.lineDividir.Y1 = 275;
             this.lineDividir.Y2 = 275;
             // 
@@ -531,18 +520,33 @@
             this.lineApellido.Y1 = 139;
             this.lineApellido.Y2 = 139;
             // 
+            // txtaNivelActividad
+            // 
+            this.txtaNivelActividad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtaNivelActividad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtaNivelActividad.Enabled = false;
+            this.txtaNivelActividad.ForeColor = System.Drawing.Color.White;
+            this.txtaNivelActividad.Location = new System.Drawing.Point(407, 320);
+            this.txtaNivelActividad.Multiline = true;
+            this.txtaNivelActividad.Name = "txtaNivelActividad";
+            this.txtaNivelActividad.Size = new System.Drawing.Size(340, 118);
+            this.txtaNivelActividad.TabIndex = 26;
+            // 
             // AgregarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panelSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "AgregarUsuario";
             this.Opacity = 0.95D;
+            this.Padding = new System.Windows.Forms.Padding(1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarUsuario";
             this.Load += new System.EventHandler(this.AgregarUsuario_Load);
@@ -594,9 +598,9 @@
         private System.Windows.Forms.NumericUpDown nupBMI;
         private System.Windows.Forms.Label lblBMI;
         private System.Windows.Forms.Label lblNivelActividadDescripcion;
-        private System.Windows.Forms.TextBox txtaNivelActividad;
         private System.Windows.Forms.Label lblEstadoPeso;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.TextBox txtaNivelActividad;
     }
 }

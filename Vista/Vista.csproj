@@ -88,6 +88,9 @@
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarUsuario.resx">
+      <DependentUpon>ConsultarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MensajeModerno.resx">
       <DependentUpon>MensajeModerno.cs</DependentUpon>
     </EmbeddedResource>
