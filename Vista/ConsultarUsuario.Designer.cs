@@ -71,6 +71,8 @@
             this.panelSuperior.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panelSuperior.Size = new System.Drawing.Size(798, 28);
             this.panelSuperior.TabIndex = 4;
+            this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
+            this.panelSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSuperior_MouseDown);
             // 
             // btnCerrar
             // 
@@ -211,7 +213,7 @@
             this.cmbFactorActividad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbFactorActividad.ForeColor = System.Drawing.Color.White;
             this.cmbFactorActividad.FormattingEnabled = true;
-            this.cmbFactorActividad.Location = new System.Drawing.Point(545, 52);
+            this.cmbFactorActividad.Location = new System.Drawing.Point(545, 51);
             this.cmbFactorActividad.Name = "cmbFactorActividad";
             this.cmbFactorActividad.Size = new System.Drawing.Size(248, 30);
             this.cmbFactorActividad.TabIndex = 22;
@@ -233,7 +235,7 @@
             this.cmbCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbCategoria.ForeColor = System.Drawing.Color.White;
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(290, 52);
+            this.cmbCategoria.Location = new System.Drawing.Point(290, 48);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(199, 30);
             this.cmbCategoria.TabIndex = 20;
@@ -254,7 +256,7 @@
             this.cmbGenero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbGenero.ForeColor = System.Drawing.Color.White;
             this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Location = new System.Drawing.Point(14, 47);
+            this.cmbGenero.Location = new System.Drawing.Point(14, 46);
             this.cmbGenero.Name = "cmbGenero";
             this.cmbGenero.Size = new System.Drawing.Size(199, 30);
             this.cmbGenero.TabIndex = 18;
