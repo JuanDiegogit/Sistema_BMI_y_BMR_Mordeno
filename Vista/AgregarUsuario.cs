@@ -19,6 +19,7 @@ namespace Vista
         public AgregarUsuario()
         {
             InitializeComponent();
+            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

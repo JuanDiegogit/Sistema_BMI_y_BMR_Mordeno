@@ -16,6 +16,8 @@ namespace Vista
 {
     public partial class ConsultarUsuario : Form
     {
+
+        
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
@@ -79,6 +81,7 @@ namespace Vista
         public ConsultarUsuario()
         {
             InitializeComponent();
+            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -96,10 +99,12 @@ namespace Vista
             if(this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
+                this.Padding = new Padding(0);
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
+                this.Padding = new Padding(1);
             }
          
 
