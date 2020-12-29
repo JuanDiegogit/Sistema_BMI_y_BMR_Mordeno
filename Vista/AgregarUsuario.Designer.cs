@@ -60,11 +60,11 @@
             this.lineNombre = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineApellido = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMaximizarRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelPrincipal.SuspendLayout();
             this.panelPrincipalContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupBMR)).BeginInit();
@@ -123,7 +123,7 @@
             this.panelPrincipalContenedor.Location = new System.Drawing.Point(20, 10);
             this.panelPrincipalContenedor.MaximumSize = new System.Drawing.Size(900, 0);
             this.panelPrincipalContenedor.Name = "panelPrincipalContenedor";
-            this.panelPrincipalContenedor.Size = new System.Drawing.Size(758, 450);
+            this.panelPrincipalContenedor.Size = new System.Drawing.Size(758, 0);
             this.panelPrincipalContenedor.TabIndex = 1;
             // 
             // txtaNivelActividad
@@ -503,6 +503,18 @@
             this.panel1.TabIndex = 5;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSuperior_MouseDown);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(33, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 21);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Agregar Usuario";
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSuperior_MouseDown);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Vista.Properties.Resources.logo_1;
@@ -529,7 +541,7 @@
             // btnMaximizarRestaurar
             // 
             this.btnMaximizarRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizarRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizarRestaurar.Image")));
+            this.btnMaximizarRestaurar.Image = global::Vista.Properties.Resources.Maximizar;
             this.btnMaximizarRestaurar.Location = new System.Drawing.Point(747, 3);
             this.btnMaximizarRestaurar.Name = "btnMaximizarRestaurar";
             this.btnMaximizarRestaurar.Size = new System.Drawing.Size(20, 20);
@@ -549,18 +561,6 @@
             this.btnMinimizar.TabIndex = 6;
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(33, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 21);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Agregar Usuario";
-            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSuperior_MouseDown);
             // 
             // AgregarUsuario
             // 

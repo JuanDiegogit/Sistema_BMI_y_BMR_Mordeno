@@ -133,11 +133,13 @@ namespace Vista
             {
                 this.WindowState = FormWindowState.Maximized;
                 this.Padding = new Padding(0);
+                this.btnMaximizarRestaurar.Image = global::Vista.Properties.Resources.Restaurar;
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
                 this.Padding = new Padding(1);
+                this.btnMaximizarRestaurar.Image = global::Vista.Properties.Resources.Maximizar;
             }
          
         }

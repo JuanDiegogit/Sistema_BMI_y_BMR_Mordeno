@@ -145,24 +145,6 @@
     <value>287, 0</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnMaximizarRestaurar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAthJREFUeF7t0DFqQFEUQsG//00nzVS3MQSelVMfEPxmZmZmZmZmZmZmZmZmZv7h
-        Zyrc3Wd/HnN3n/15zN199ucxd/fZn8fc3Wd/HnN3n/15zN199ucxd/fZn8fc3Wd/HnN3n/1IPod7Inmf
-        /Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6H
-        eyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf
-        /Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6H
-        eyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf
-        /Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6H
-        eyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf
-        /Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6H
-        eyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf
-        /Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6HeyJ5n/1IPod7Inmf/Ug+h3sieZ/9SD6H
-        eyJ5n/1IPod7Inmf/XnM3X325zF399mfx9zdZ38ec3ef/XnM3X325zF399mfx9zdZ38ec3ef/XnM3X32
-        5zF3z8zMzMzMzMzMzMzMzMz83ff9AjlL0OCjol5gAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnMinimizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
