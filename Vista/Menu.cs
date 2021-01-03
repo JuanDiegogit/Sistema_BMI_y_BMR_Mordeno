@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Vista.Properties;
 
 namespace Vista
 {
@@ -22,6 +23,7 @@ namespace Vista
         public Menu()
         {
             InitializeComponent();
+            this.Location = Settings.Default.Localizacion_Menu;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -61,6 +63,12 @@ namespace Vista
         {
             new ConsultarUsuario { StartPosition = FormStartPosition.CenterScreen }.Show();
             this.Hide();
+        }
+
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Settings.Default.Localizacion_Menu = this.Location;
+            Settings.Default.Save();
         }
     }
 }

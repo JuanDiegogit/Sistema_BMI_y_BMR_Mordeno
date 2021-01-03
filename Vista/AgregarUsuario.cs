@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Vista.Properties;
 
 namespace Vista
 {
@@ -271,6 +272,8 @@ namespace Vista
 
         private void AgregarUsuario_Load(object sender, EventArgs e)
         {
+            this.Location = Settings.Default.Localizacion_Agregar;
+            this.Size = Settings.Default.tamaño_Agregar;
             llenarComboSexo();
             llenarComboNivelActividad();
         }
@@ -366,6 +369,13 @@ namespace Vista
                 new MensajeModerno("No se ha guardado", MensajeModerno.MENSAJE_ERROR, this) { StartPosition = FormStartPosition.CenterScreen }.Show();
 
             }
+        }
+
+        private void AgregarUsuario_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Settings.Default.Localizacion_Agregar = this.Location;
+            Settings.Default.tamaño_Agregar = this.Size;
+            Settings.Default.Save();
         }
     }
 }

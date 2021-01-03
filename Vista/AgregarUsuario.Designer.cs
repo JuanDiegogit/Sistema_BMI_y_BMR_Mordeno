@@ -123,7 +123,7 @@
             this.panelPrincipalContenedor.Location = new System.Drawing.Point(20, 10);
             this.panelPrincipalContenedor.MaximumSize = new System.Drawing.Size(900, 0);
             this.panelPrincipalContenedor.Name = "panelPrincipalContenedor";
-            this.panelPrincipalContenedor.Size = new System.Drawing.Size(758, 0);
+            this.panelPrincipalContenedor.Size = new System.Drawing.Size(758, 450);
             this.panelPrincipalContenedor.TabIndex = 1;
             // 
             // txtaNivelActividad
@@ -578,6 +578,7 @@
             this.Padding = new System.Windows.Forms.Padding(1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarUsuario";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AgregarUsuario_FormClosed);
             this.Load += new System.EventHandler(this.AgregarUsuario_Load);
             this.Resize += new System.EventHandler(this.AgregarUsuario_Resize);
             this.panelPrincipal.ResumeLayout(false);

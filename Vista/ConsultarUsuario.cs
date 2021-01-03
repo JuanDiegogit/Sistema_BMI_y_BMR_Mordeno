@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Vista.Properties;
 
 namespace Vista
 {
@@ -159,6 +160,8 @@ namespace Vista
 
         private void ConsultarUsuario_Load(object sender, EventArgs e)
         {
+            this.Location = Settings.Default.Localizacion_Consultar;
+            this.Size = Settings.Default.Tamaño_Consultar;
             LlenarComboGenero();
             LlenarComboNivelActividad();
             LlenarComboCategoria();
@@ -173,6 +176,8 @@ namespace Vista
         private void ConsultarUsuario_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.OpenForms[0].Show();
+            Settings.Default.Localizacion_Consultar = this.Location;
+            Settings.Default.Tamaño_Consultar = this.Size;
         }
 
         private void panelSuperior_Paint(object sender, PaintEventArgs e)
